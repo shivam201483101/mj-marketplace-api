@@ -1,10 +1,10 @@
 {
    "version": 2,
-   "name": "maketplace",
+   "name": "marketplace",
    "builds": [
       { "src": "app.js", "use": "@vercel/node" }
    ],
    "routes": [
-      { "src": "/(.*)", "dest": "/" }
+      { "src": "/(.*)", "dest": "/server.js" }
    ]
 }
