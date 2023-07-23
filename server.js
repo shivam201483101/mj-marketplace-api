@@ -44,11 +44,7 @@ app.use((err, req, res, next) => {
 
   return res.status(errorStatus).send(errorMessage);
 });
-app.get('*',(req,res,next))=>{
-  res.status(200).json({
-    message:'bad request'
-  })
-})
+
 
 app.listen(8800, () => {
   connect();
